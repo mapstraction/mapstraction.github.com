@@ -1,0 +1,38 @@
+---
+layout: default
+title: v1
+---
+
+
+<div id="v1content">
+  <h2>Previous Versions: v1</h2>  				
+  <ul>
+    <li><a href="/doc/" title="Generated Javascript Documentation">API Documentation</a></li>
+    <li><a href="http://www.mapstraction.com/ljn.php" title="Mapstraction, Single Page with Several Maps">Page with several maps</a></li>
+    <li><a href="http://www.mapstraction.com/demo-georss.php" title="GeoRSS &amp; KML Overlays in Mapstraction">GeoRSS &amp; KML</a></li>
+    <li><a href="http://www.mapstraction.com/demo-overlay.php" title="">Image Overlay</a></li>
+    <li><a href="http://www.mapstraction.com/demo-tiles.php" title="">Map Tiles</a></li>
+    <li><a href="http://www.mapstraction.com/demo-filters.php" title="Time Slider via Mapstraction Filters">Marker Filters /Time Navigation</a></li>
+    <li><a href="http://www.mapstraction.com/demo-fullscreen.html" title="">Fullscreen</a></li>
+    <li><a href="http://www.mapstraction.com/demo-polylines.php" title="Mapstraction Polygon Example">Polylines</a></li>
+    <li><a href="http://www.mapstraction.com/geocode.php?geocoder=mapquest&amp;map=mapquest" title="Mapstraction - a javascript library to hide differences between mapping APIs.">Geocoding</a></li>
+    <li><a href="http://www.mapstraction.com/route.php?router=mapquest&amp;map=mapquest" title="Mapstraction - a javascript library to hide differences between mapping APIs.">Routes</a></li>
+    <li><a href="http://www.mapstraction.com/demo-radius.php" title="Radius Searching">Radius Searching</a></li>
+  </ul>    
+
+
+  <h2>Old Specific Provider Demos for v1</h2>        
+  <ul>
+    <li><a href="http://www.mapstraction.com/demo.php?map=freeearth" title="Mapstraction - Free Earth Demo">FreeEarth</a></li>
+    <li><a href="http://www.mapstraction.com/demo.php?map=google" title="Mapstraction - Google Demo">Google</a></li>
+    <li><a href="http://www.mapstraction.com/demo.php?map=map24" title="Mapstraction - Map24 Demo">Map24</a></li>
+    <li><a href="http://www.mapstraction.com/demo.php?map=mapquest" title="Mapstraction - MapQuest Demo">MapQuest</a></li>
+    <li><a href="http://www.mapstraction.com/demo.php?map=microsoft" title="Mapstraction - Microsoft Demo">Microsoft</a></li>
+    <li><a href="http://www.mapstraction.com/demo.php?map=multimap" title="Mapstraction - MultiMap Demo">MultiMap</a> <small>Commercial and <a href="http://www.multimap.com/openapi/">OpenAPI</a></small></li>
+    <li><a href="http://www.mapstraction.com/demo.php?map=openlayers" title="Mapstraction - OpenLayers Demo">OpenLayers</a></li>
+    <li><a href="http://www.mapstraction.com/demo.php?map=openspace" title="Mapstraction - OpenSpace Demo">OpenSpace</a></li>
+    <li><a href="http://www.mapstraction.com/demo.php?map=openstreetmap" title="Mapstraction - OpenStreetMap Demo">OpenStreetMap</a></li>
+    <li><a href="http://www.mapstraction.com/demo.php?map=viamichelin" title="Mapstraction - ViaMichelin">ViaMichelin</a> <span style="color: red">(new)</span></li>
+    <li><a href="http://www.mapstraction.com/demo.php?map=yahoo" title="Mapstraction - Yahoo Demo">Yahoo</a></li>
+  </ul>
+</div>

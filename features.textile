@@ -1,0 +1,1813 @@
+---
+layout: default
+title: Mapstraction Provider Feature Matrix
+---
+
+	<style type="text/css" media="screen">
+	table {border: 1px solid #888888; width: 800px;}
+	td.Yes { background-color: #00FF00; }
+	td.Some { background-color: #FF9900; }
+	td.No { background-color: white; }
+	td {border: 1px solid #888;}
+	.map {width: 500px; height: 400px;  	  background-color: #FFFFFF; border: 1px solid black;}
+	#coverage_nav, #legend { padding: 10px 20px; float: left ;}
+	#legend { margin-top: -164px; margin-left: 360px; background-color: white;}
+	#info {height: 40px; width: 300px;}
+	.right {display: none;}
+	abbr {text-decoration: underline; color: #FF9900;}
+	</style>
+
+	<p>The table below shows the current matrix of features <strong>implemented</strong> in Mapstraction. This is not meant to be a feature comparison of the various providers. Functionality that is not implemented for a provider may be due to just the lack of a developer adding that piece of code, or the provider may not offer that specific capability. 
+	</p>	
+	<p>
+		If there are any errors to the feature matrix below, or if you would like to implement a feature, feel free to contact the group on the <a href="http://lists.mapstraction.com/listinfo.cgi/mapstraction-mapstraction.com">Mapstraction mailing list</a>, or just submit a patch. 
+	</p>
+		<table border="0" cellpadding="0" cellspacing="0" id='tblMain'>
+			<tr>
+				<td>
+					<table border="0" cellpadding="0" cellspacing="0" class='tblGenFixed' id='tblMain_0'>
+						<tr>
+							<td class='rShim' style='width:0;'></td>
+							<td class='rShim' style='width:195px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s0'>
+								Method
+							</td>
+							<td class='g s1'>
+								Google
+							</td>
+							<td class='g s1'>
+								Yahoo
+							</td>
+							<td class='g s1'>
+								Microsoft
+							</td>
+							<td class='g s1'>
+								OpenLayers
+							</td>
+							<td class='g s1'>
+								MultiMap
+							</td>
+							<td class='g s1'>
+								Map24
+							</td>
+							<td class='g s1'>
+								MapQuest
+							</td>
+							<td class='g s1'>
+								FreeEarth
+							</td>
+							<td class='g s1'>
+								OpenSpace
+							</td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								Mapstraction
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								addAPI
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								resizeTo
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								addControls
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								addSmallControls
+							</td>
+							<td class='g s4'>
+								n/a
+							</td>
+							<td class='g s4'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								addLargeControls
+							</td>
+							<td class='g s4'>
+								n/a
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								addMapTypeControls
+							</td>
+							<td class='g s4'>
+								n/a
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								dragging
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								setCenterAndZoom
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								addMarker
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								addMarkerWithData
+							</td>
+							<td class='g s4'>
+								n/a
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								addPolylineWithData
+							</td>
+							<td class='g s4'>
+								n/a
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								removeMarker
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								removeAllMarkers
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								declutterMarkers
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								addPolyline
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								removePolyline
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								removeAllPolylines
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								getCenter
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table border="0" cellpadding="0" cellspacing="0" class='tblGenFixed' id='tblMain_1'>
+						<tr>
+							<td class='rShim' style='width:0;'></td>
+							<td class='rShim' style='width:195px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								setCenter
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								setZoom
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								autoCenterAndZoom
+							</td>
+							<td class='g s4'>
+								n/a
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								centerAndZoomOnPoints
+							</td>
+							<td class='g s4'>
+								n/a
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								getZoom
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								getZoomLevelForBoundingBox
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								setMapType
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								getMapType
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								getBounds
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								setBounds
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								addImageOverlay
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								setImageOpacity
+							</td>
+							<td class='g s4'>
+								n/a
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								setImagePosition
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								addOverlay
+							</td>
+							<td class='g s4'>
+								x (<abbr title="GeoRSS">G</abbr>/<abbr title="KML">K</abbr>)
+							</td>
+							<td class='g s4'>
+								x (<abbr title="GeoRSS">G</abbr>)
+							</td>
+							<td class='g s4'>
+								x (<abbr title="GeoRSS">G</abbr>)
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s4'>
+								x (<abbr title="GeoRSS">G</abbr>)
+							</td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								addJSON
+							</td>
+							<td class='g s4'>
+								n/a
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								addTileLayer
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								toggleTileLayer
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								addFilter
+							</td>
+							<td class='g s4'>
+								n/a
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								removeFilter
+							</td>
+							<td class='g s4'>
+								n/a
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								toggleFilter
+							</td>
+							<td class='g s4'>
+								n/a
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table border="0" cellpadding="0" cellspacing="0" class='tblGenFixed' id='tblMain_2'>
+						<tr>
+							<td class='rShim' style='width:0;'></td>
+							<td class='rShim' style='width:195px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								removeAllFilters
+							</td>
+							<td class='g s4'>
+								n/a
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								doFilter
+							</td>
+							<td class='g s4'>
+								n/a
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								applyFilter
+							</td>
+							<td class='g s4'>
+								n/a
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								getAttributeExtremes
+							</td>
+							<td class='g s4'>
+								n/a
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								getMap
+							</td>
+							<td class='g s4'>
+								n/a
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								showRoute
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s5'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								Marker
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								Label
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								Info Bubble
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								Info Div
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								Icon
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								Icon Size
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								Shadow
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								Hover Bubble
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								Hover Icon
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								Draggable
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s5'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								Polyline
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								Color
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table border="0" cellpadding="0" cellspacing="0" class='tblGenFixed' id='tblMain_3'>
+						<tr>
+							<td class='rShim' style='width:0;'></td>
+							<td class='rShim' style='width:195px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+							<td class='rShim' style='width:73px;'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								Width
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								Opacity
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								Polygon
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								Fill Color
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+						<tr>
+							<td class="hd">
+								<p style='height:16px;'>
+									.
+								</p>
+							</td>
+							<td class='g s2'>
+								Encoded
+							</td>
+							<td class='g s4'>
+								x
+							</td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+							<td class='g s3'></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<h3>Notes</h3>
+	<ul>
+		<li>G - GeoRSS</li>
+		<li>K - KML</li>		
+		<li>n/a - indicates this feature isn't provider specific</li>		
+	</ul>

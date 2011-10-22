@@ -1,0 +1,207 @@
+/* 
+####################################################################################
+
+FILE: global stylesheet
+PROJECT: mapstraction
+AUTHOR: Nomsa Buchholz
+CREATED: 12/09/2010
+
+
+####################################################################################
+
+####################################################################################
+
+MAIN COLORS: 
+
+background 			#fff
+main				#4c4c4c
+second				#38569a
+links				#38569a
+links hover			#94c52d
+links visited		#a64842
+
+
+
+#################################################################################### 
+
+
+/* reset
+####################################################################################
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+
+/* general typography and basics
+####################################################################################
+*/
+
+body {
+	background: #fff;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
+	             "Helvetica Neue", sans-serif;
+	font-weight: 400;
+	font-size: 0.9em;
+	color: #4c4c4c;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	line-height: 1.3em;
+	background: url("mapstraction_logo.png") top left no-repeat;
+	text-indent: 200px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-size: 4em;
+}
+
+
+h1 a, h1 a:visited, h1 a:hover {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-weight: normal;
+	color: #38569a;
+	text-decoration: none;
+}
+
+h2 {
+	padding-bottom: 10px;
+	
+}
+
+h3 {
+	font-size:0.9em;
+	padding-bottom: 10px;
+	padding-top:10px;
+
+	
+}
+
+a {
+	color: #38569a;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
+	             "Helvetica Neue", sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+/*	text-decoration: none;*/
+	
+}
+
+a:hover {
+	color: #94c52d;
+	
+}
+
+a:visited {
+	color: #a64842;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+
+p {
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+
+/* main layout elements
+####################################################################################
+*/
+
+#pagewrapper {
+	width: 960px;
+        padding-top:10px;
+	margin: 0 auto;
+}
+
+#menu {
+	float: left;
+	width: 200px;
+	line-height: 2em;
+}
+
+#content {
+	float: left;
+	width: 500px;
+	padding-bottom: 20px;
+}
+
+#content ul {
+	padding-bottom: 5px;
+}
+
+#v1content {
+	padding-bottom: 20px;
+}
+
+#sidebar {
+	float: right;
+	width: 200px;
+}
+
+#sidebar li {
+	font-size: 0.9em;
+}
+
+#sidebar ul {
+	padding-bottom:20px;
+}
+
+
+#footer {
+	clear: both;	
+	padding-bottom:20px;
+	padding-top: 30px;
+	font-size: 0.8em;
+}
+
+#logo {
+	float:left;
+}
+
+#bullets {
+	list-style-type: disc;
+	margin-bottom: 20px;
+} 
+
+#subline {
+	font-size: 1em;
+	font-weight: 300;
+	font-style: italic;
+	text-indent: 200px;
+	padding-bottom: 35px;
+}
+
+.section {
+	margin-bottom: 5px;
+}
+
+#projects li {
+	padding-bottom: 5px;
+	
+}
+
+
+
+
+
+
+
+
