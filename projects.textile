@@ -6,6 +6,7 @@ title: Projects
   <div id="v1content">
     <div id="projects">
     <h2>Projects and Plugins</h2> 
+    <p>These are just a few example projects that are using Mapstraction. Let us know if you want to highlight your project using mapstraction through our <a href="http://lists.mapstraction.com/listinfo.cgi/mapstraction-mapstraction.com" title="Mapstraction Mailing List">mailing list</a></p>
     <h3>Drupal Modules</h3> 
     <ul>
     <li><a href="http://drupal.org/project/mapstraction" title="Mapstraction | drupal.org">Mapstraction</a><br />The module provides a Views style plugin and an API for developers to use maps elsewhere. </li>
