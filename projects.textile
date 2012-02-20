@@ -18,4 +18,9 @@ title: Projects
     <li><a href="http://wordpress.org/extend/plugins/geopress/" title="WordPress &#8250; GeoPress &laquo; WordPress Plugins">GeoPress</a><br />GeoPress adds geographic tagging of your posts and pages.</li>      
     </ul>
     </div>
+
+    <h3>SPIP Plugins</h3>
+    <ul>
+      <li><a href="http://www.spip-contrib.net/GIS2" title="GIS plugin for SPIP | spip-contrib.net">GIS plugin for SPIP.</a></li>
+    </ul>
   </div>
