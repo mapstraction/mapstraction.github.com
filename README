@@ -1,3 +1,27 @@
 Mapstraction homepage
 
 Viewable at http://mapstraction.github.com
+
+Notes for testing locally (assumes Mac OS X)
+
+GitHub Pages use Jekyll to serve up rendered pages (https://github.com/mojombo/jekyll)
+
+Assuming you're using Home Brew, you'll need to install the latest version of Ruby and then
+the Jekyll gem (yes, I know OS X ships with Ruby and Home Brew is a Ruby script, but the
+shipped version of Ruby is ancient (1.8.7 on Lion) compared with 1.9.3p327 via Home Brew).
+
+You'll also need to install the gem for RedCloth which is needed to serve .textile pages
+but which (oddly) isn't a dependency of Jekyll
+
+$ brew install ruby
+$ sudo gem install jekyll
+$ sudo gem install RedCloth
+
+Then from the root of this repository, start the Jekyll server using the GitHub defaults
+(note the Home Brew installs gem binaries into the Cellar and not symlinked into
+/usr/local/bin) (https://help.github.com/articles/using-jekyll-with-pages)
+
+$ /usr/local/Cellar/ruby/1.9.3p327/bin/jekyll --server --pgyments --no-lsi --safe
+
+Finally point your browser at http://localhost:4000 and you should see the Mapstraction
+home page being locally hosted

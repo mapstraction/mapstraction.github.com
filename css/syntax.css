@@ -1,0 +1,49 @@
+.highlight {
+	background-color: #49483e;
+	font-family: Courier New, monospace;
+	overflow-x: scroll;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.err {
+	color: #960050;
+	background-color: #1e0010;
+}
+
+.ge {
+	font-style: italic;
+}
+
+.gs {
+	font-weight: 700;
+}
+
+.c,.cm,.cp,.c1,.cs {
+	color: #75715e;
+}
+
+.k,.kc,.kd,.kp,.kr,.kt,.no {
+	color: #66d9ef;
+}
+
+.l,.m,.mf,.mh,.mi,.mo,.se,.il {
+	color: #ae81ff;
+}
+
+.n,.p,.nb,.ni,.nl,.nn,.py,.nv,.w,.bp,.vc,.vg,.vi {
+	color: #f8f8f2;
+}
+
+.o,.kn,.nt,.ow {
+	color: #f92672;
+}
+
+.ld,.s,.sb,.sc,.sd,.s2,.sh,.si,.sx,.sr,.s1,.ss {
+	color: #e6db74;
+}
+
+.na,.nc,.nd,.ne,.nf,.nx {
+	color: #a6e22e;
+}

@@ -121,6 +121,13 @@ p {
 ####################################################################################
 */
 
+.forkme {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 0;
+}
+
 #pagewrapper {
 	width: 960px;
         padding-top:10px;
@@ -175,7 +182,12 @@ p {
 #bullets {
 	list-style-type: disc;
 	margin-bottom: 20px;
-} 
+}
+
+.numbered {
+	list-style-type: decimal;
+	margin-bottom: 20px;
+}
 
 #subline {
 	font-size: 1em;
