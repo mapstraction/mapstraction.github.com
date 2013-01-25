@@ -3,24 +3,43 @@ layout: default
 title: Home
 ---
 
-      <div class="section">
-        <h2>About Mapstraction</h2>
-        <p>Mapstraction is a programming library that provides a common interface for numerous javascript mapping libraries to enable switching from one to another as smoothly as possible. Developers can code their web applications once, and then easily switch the mapping provider based on project needs, terms and conditions, and new functionality.</p>
-        <p>Users can switch maps as desired based on personal taste and quality of maps in their local area. Various tools built on top of Mapstraction allow users to easily integrate maps into their own sites, and configure them with different controls, styles, and provider.</p>
-      </div>
+<div class="section">
+	<h2>What Is Mapstraction?</h2>
+	<p>Mapstraction is a Javascript library that provides a single, common interface for a wide variety of Javascript map APIs. It's designed to enable a developer to switch from one maps API to another as smoothly and as quickly as possible.</p>
+</div>
 
-      <h2>Major Features</h2>
-      <ul id="bullets">
-        <li>Support for all major mapping providers</li>
-        <li>Dynamic switching of provider</li>
-        <li>Markers with Point, Line, Polygon, GeoRSS, KML support</li>
-        <li>Image overlay and basemap tiles</li>
-        <li><a href="http://github.com/mapstraction" title="mapstraction's Profile - GitHub">Open-source</a> - we welcome your contributions!</li>
-        <li><a href="http://lists.mapstraction.com/listinfo.cgi/mapstraction-mapstraction.com" title="Mapstraction Mailing List">Friendly community</a></li>
-      </ul>    
+<div class="section" id="map-sample"></div>
 
-      <div class="section">
-        <h2>Why Mapstraction?</h2>
-        <p>By avoiding dependency on any specific mapping provider (or versions within a provider) your code is easier to maintain. You can switch map provider based on terms of use, user preference, or when running 'offline'.</p>
-          <p>Mapstraction is open-source and released under the <a href="http://www.opensource.org/licenses/bsd-license.php">BSD License</a>.</p>
-        </div>
+<div class="section">
+	<h2>Why Use Mapstraction?</h2>
+	<p>Code your application once and once only; then switch your mapping provider as you desire, depending on your personal tastes, the quality of maps in your area or any other reason you can think of.</p>
+	<p>Switching mapping providers in Mapstraction is often as simple as changing just two lines of code in your application.</p>
+</div>
+
+<div class="section">
+	<h2>Mapstraction Features</h2>
+	<ul>
+		<li>Support for all the major mapping APIs</li>
+			<ul class="bullets">
+				<li>CloudMade</li>
+				<li>ESRI ArcGIS</li>
+				<li>Google - v2 and v3</li>
+				<li>Leaflet</li>
+				<li>MapQuest and MapQuest Open</li>
+				<li>Microsoft Bing - v6 and v7</li>
+				<li>Nokia Here</li>
+				<li>OpenLayers</li>
+				<li>Ordnance Survey OpenSpace</li>
+				<li>Nokia Ovi</li>
+				<li>Yandex</li>
+			</ul>
+		<li>Dynamic switching from one maps API to another</li>
+		<li>Show Markers, Points, Lines and Polygons on your map</li>
+		<li>Add image overlays and base map tiles to your application</li>
+	</ul>
+</div>
+
+<div class="section">
+	<h2>Mapstraction Is Open Source</h2>
+	<p>Mapstraction is an open source project with the source code freely available from <a href="https://github.com/mapstraction/mxn/">GitHub</a> and is released under the <a href="http://opensource.org/licenses/bsd-license.php">BSD License</a>.</p>
+</div>

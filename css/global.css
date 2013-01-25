@@ -74,13 +74,13 @@ h1 {
 h1 a, h1 a:hover {
 	font-family: Georgia, Times, "Times New Roman", serif;
 	font-weight: normal;
-	color: #38569a;
+	color: #94c52d;
 	text-decoration: none;
 }
 
 h2 {
 	padding-bottom: 10px;
-	
+	color: #38569a;
 }
 
 h3 {
@@ -140,9 +140,22 @@ p {
 	line-height: 2em;
 }
 
+#menu div {
+	width: 155px;
+	font-size: 75%;
+}
+
+#menu h2 {
+	margin-top: 10px;
+}
+
+.highlight {
+	color: #38569a;
+}
+
 #content {
 	float: left;
-	width: 500px;
+	width: 700px;
 	padding-bottom: 20px;
 }
 
@@ -179,22 +192,30 @@ p {
 	float:left;
 }
 
-#bullets {
+.bullets {
 	list-style-type: disc;
+	list-style-position: inside;
 	margin-bottom: 20px;
 }
 
 .numbered {
 	list-style-type: decimal;
+	list-style-position: inside;
 	margin-bottom: 20px;
 }
 
 #subline {
-	font-size: 1em;
+	font-size: 2em;
 	font-weight: 300;
 	font-style: italic;
 	text-indent: 200px;
 	padding-bottom: 35px;
+}
+
+.section h2 {
+	font-size: 2em;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .section {
@@ -206,10 +227,9 @@ p {
 	
 }
 
-
-
-
-
-
-
-
+#map-sample {
+	width: 700px;
+	height: 364px;
+	margin-left: auto;
+	margin-right: auto;
+}
