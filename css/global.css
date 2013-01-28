@@ -97,12 +97,12 @@ a, a:visited {
 	             "Helvetica Neue", sans-serif;
 	font-weight: 400;
 	font-size: 1em;
-/*	text-decoration: none;*/
-	
+	text-decoration: none;
 }
 
 a:hover {
 	color: #94c52d;
+	text-decoration: underline;
 	
 }
 
@@ -112,7 +112,7 @@ ol, ul {
 
 
 p {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	text-align: justify;
 }
 
@@ -149,7 +149,11 @@ p {
 	margin-top: 10px;
 }
 
-.highlight {
+#menu ul {
+	color: #38569a;
+}
+
+.header-highlight {
 	color: #38569a;
 }
 
@@ -195,13 +199,11 @@ p {
 .bullets {
 	list-style-type: disc;
 	list-style-position: inside;
-	margin-bottom: 20px;
 }
 
 .numbered {
 	list-style-type: decimal;
 	list-style-position: inside;
-	margin-bottom: 20px;
 }
 
 #subline {

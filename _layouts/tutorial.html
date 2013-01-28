@@ -5,8 +5,13 @@
 	<meta name="Javascript mapping abstraction library" content="">
 	<meta name="mapstraction" content="">
 	<link rel="stylesheet" href="/css/global.css" type="text/css" media="screen" title="">
+	<link rel="stylesheet" href="/css/syntax.css" type="text/css" media="screen">
+	
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link href="http://leaflet.cloudmade.com/dist/leaflet.css" media="all" rel="stylesheet" type="text/css" />
+	<script src="http://leaflet.cloudmade.com/dist/leaflet.js" type="text/javascript"></script>  <script src="http://openlayers.org/api/OpenLayers.js"></script>
+	<script src="https://raw.github.com/mapstraction/mxn/master/source/mxn.js?(openlayers,leaflet)" type="text/javascript"></script>
 	<title>Mapstraction - {{ page.title }}</title>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
 	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.3/jquery.backstretch.min.js"></script>
@@ -30,11 +35,26 @@
     		<ul class="nav">
 				<li><a href="/">home</a></li>
 				<li><a href="http://github.com/mapstraction/mxn/downloads">download</a></li>
-				<li><a href="/tutorial/">tutorial</a></li>
+				<li>tutorial</li>
+				<ul class="bullets">
+					<li><a href="/tutorial/">getting started</a></li>
+					<li><a href="/exceptions/">exceptions</a></li>
+					<li><a href="/tutorial/coordinates/">coordinates</a></li>
+					<li><a href="/tutorial/bounds/">bounds and centres</a></li>
+					<li><a href="/tutorial/zooming/">zooming</a></li>
+					<li><a href="/tutorial/map-controls/">map controls</a></li>
+					<li><a href="/tutorial/map-types/">map types</a></li>
+					<li><a href="/tutorial/markers/">markers</a></li>
+					<li><a href="/tutorial/info-bubbles/">info bubbles</a></li>
+					<li><a href="/tutorial/polylines/">polylines</a></li>
+					<li><a href="/tutorial/polygons/">polygons</a></li>
+					<li><a href="/tutorial/tile-layers/">tile layers</a></li>
+					<li><a href="/tutorial/events/">events</a></li>
+				</ul>
 				<li><a href="http://mapstraction.com/mxn/build/latest/docs/index.html">documentation</a></li>
 				<li><a href="http://wiki.github.com/mapstraction/mxn/">wiki</a></li>
 				<li><a href="https://github.com/mapstraction/mxn/">code</a></li>
-				<li><a href="/projects/">projects / plugins</a></li>
+				<li><a href="/projects">projects / plugins</a></li>
 			</ul>
 			<h2>community</h2>
 			<ul>
