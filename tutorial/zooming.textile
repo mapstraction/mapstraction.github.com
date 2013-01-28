@@ -1,0 +1,9 @@
+---
+layout: tutorial
+title: Tutorial | Zooming
+---
+
+<div class="section">
+	<h2>Zooming</h2>
+	<p>Coming soon ...</p>
+</div>

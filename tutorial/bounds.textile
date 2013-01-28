@@ -1,0 +1,9 @@
+---
+layout: tutorial
+title: Tutorial | Bounds and Centres
+---
+
+<div class="section">
+	<h2>Bounds and Centres</h2>
+	<p>Coming soon ...</p>
+</div>

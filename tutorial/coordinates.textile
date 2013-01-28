@@ -1,0 +1,9 @@
+---
+layout: tutorial
+title: Tutorial | Coordinates
+---
+
+<div class="section">
+	<h2>Coordinates</h2>
+	<p>Coming soon ...</p>
+</div>

@@ -1,0 +1,9 @@
+---
+layout: tutorial
+title: Tutorial | Info Bubbles
+---
+
+<div class="section">
+	<h2>Info Bubbles</h2>
+	<p>Coming soon ...</p>
+</div>

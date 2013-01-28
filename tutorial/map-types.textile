@@ -1,0 +1,9 @@
+---
+layout: tutorial
+title: Tutorial | Map Types
+---
+
+<div class="section">
+	<h2>Map Types</h2>
+	<p>Coming soon ...</p>
+</div>

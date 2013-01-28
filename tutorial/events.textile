@@ -1,0 +1,9 @@
+---
+layout: tutorial
+title: Tutorial | Events
+---
+
+<div class="section">
+	<h2>Events</h2>
+	<p>Coming soon ...</p>
+</div>
