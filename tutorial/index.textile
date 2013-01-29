@@ -4,7 +4,38 @@ title: Tutorial | Getting Started
 ---
 
 	<div class="section">
-		<h2>First Steps - Choose Your Maps Provider</h2>
+		<h2>Loading The Map</h2>
+		<p>Because of the differing ways that the mapping libraries that Mapstraction supports load a map into your web page, it's highly advisable to place your code inside a function which is called when the page has completed loading and also to wrap the code which produces and manages your map inside a <code>try ... catch</code> exception handling block.</p>
+		
+		<p>Assuming you place your maps initialisation code into a function called <code>load_map</code>, in plain Javascript, you'd call your function from within a <code>window.load</code> event handler.</p>
+
+{% highlight javascript %}
+window.onload = function() {
+	load_map();
+};
+{% endhighlight %}
+
+		<p>If you're using jQuery, you'd call your function from within a <code>$(document).ready()</code> event handler.</p>
+		
+{% highlight javascript %}
+$(document).ready(function() {
+	load_map();
+});
+{% endhighlight %}		
+
+		<p>If you're using Dojo, you'd call you function from within a <code>dojo.addOnLoad()</code> event handler.</p>
+		
+{% highlight javascript %}
+dojo.addOnLoad(function() {
+	load_map();
+});
+{% endhighlight %}
+		
+		<p>For more information on Mapstraction exceptions, see the <a href="/tutorial/exceptions/">Exceptions tutorial</a> and for more information on mapping provider specific <em>gotchas</em> see the <a href="https://github.com/mapstraction/mxn/wiki/Map-Provider-Gotchas">Map Provider Gotchas</a> page on the Mapstraction wiki.</p>
+	</div>
+
+	<div class="section">
+		<h2>Choose Your Map Provider</h2>
 		<p>Before you can create a map with Mapstraction, you'll need to choose which map provider you want to use. You'll need to know 3 things ...</p>
 
 		<ol class="numbered">
