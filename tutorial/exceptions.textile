@@ -5,5 +5,49 @@ title: Tutorial | Exceptions
 
 <div class="section">
 	<h2>Exceptions</h2>
-	<p>Coming soon ...</p>
+	<p>Sometimes things go wrong and Mapstraction uses Javascript <a href="https://developer.mozilla.org/en/docs/JavaScript/Reference/Global_Objects/Error">exceptions</a> to tell your code that something has gone wrong and what has gone wrong.</p>
+	<p>All exceptions that Mapstraction throws are <code>Error</code> exceptions; you're strongly advised to wrap your map initialisation code and other calls to the Mapstraction API in a <a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Statements/try...catch"><code>try ... catch</code></a> block.</p>
+	<p>If your code isn't working as you expect it to, it's likely that an uncaught exception is being thrown; you can check this via the Javascript Console in Chrome or <a href="http://getfirebug.com/">Firebug</a> in Firefox.</p>
+</div>
+
+<div class="section">
+	<h2>Map Script Not Imported Exception</h2>
+	<p>A <code>map script not imported</code> exception is thrown when you try to create a map and have not included the required Javascript support files needed by your selected maps provider.</p>
+
+{% highlight javascript %}
+try {
+	var map = new mxn.Mapstraction('mapdiv', 'openlayers'); 
+	var latlon = new mxn.LatLonPoint(39.74,-104.98);
+	map.setCenterAndZoom(latlon, 10);
+}
+
+catch (e) {
+	var msg = e.message;
+	// the msg variable holds the exception reason message
+	// how you react to/display this depends on your application
+	// in this example, msg will contain the text
+	// "openlayers map script not imported"
+}
+{% endhighlight %}
+</div>
+
+<div class="section">
+	<h2>Function Not Supported Exception</h2>
+	<p>Not all mapping providers are created equal and in some cases you may find yourself trying to call a Mapstraction API function that isn't currently supported; in this situation a <code>function not supported</code> exception will be thrown.</p>
+	
+	<p>For example, the <code>Mapstraction.declutterMarkers</code> API call isn't currently supported by Leaflet.</p>
+
+{% highlight javascript %}
+try {
+	var opts = {};
+	map.declutterMarkers(opts);
+}
+
+catch (e) {
+	var msg = e.message;
+	// the msg variable holds the exception reason message
+	// in this example, msg will contain the text
+	// "Mapstraction.declutterMarkers is not currently supported by provider leaflet"
+}
+{% endhighlight %}
 </div>

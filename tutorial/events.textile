@@ -4,6 +4,100 @@ title: Tutorial | Events
 ---
 
 <div class="section">
-	<h2>Events</h2>
-	<p>Coming soon ...</p>
+	<h2>What Are Events?</h2>
+	<p>Most of the Mapstraction API deals with synchronous calls to the API; your code asks the map to do something and then waits until that something has been completed. But Mapstraction also supports asynchronous events, which can be used to listen for when your users interact with the map.</p>
+</div>
+
+<div class="section">
+	<h2>Listening For Events</h2>
+	<p>Each of Mapstraction's events allows you to add a handler function that is invoked when the event fires; the general format of an event handler, in this case for the <code>click</code> event, is shown in the code sample below.</p>
+	
+{% highlight javascript %}
+map.click.addHandler(function(eventName, eventSource, eventArgs) {
+	// Add your event handling code here ...
+});
+{% endhighlight %}
+
+	<p>The values passed to your event handler in the <code>eventArgs</code> argument vary according to the specific event, but the <code>eventName</code> and <code>eventSource</code> arguments should always contain the same values:</p>
+
+	<ul class="bullets">
+		<li><code>eventName</code> - the name of the event that is being fired.</li>
+		<li><code>eventSource</code> - the map object for which the event is being fired, in other words an instance of the <code>mxn.Mapstraction</code> object.</li>
+	</ul>
+</div>
+
+<div class="section">
+	<h2>Mapstraction Events</h2>
+	<h3>The Load Event</h3>
+	<p>The <code>load</code> event is fired when the map has loaded. The event handler's <code>eventArgs</code> argument is empty for this event.</p>
+
+{% highlight javascript %}
+map.load.addHandler(function(eventName, eventSource, eventArgs) {
+	// map loaded
+});
+{% endhighlight %}
+	
+	<h3>The Click Event</h3>
+	<p>The <code>click</code> event is fired when the map is clicked. The event handler's <code>eventArgs</code> argument will contain an object with a <code>location</code> property whose value is a <code>mxn.LatLonPoint</code> containing the coordinates at which the click occurred.</p>
+
+{% highlight javascript %}
+map.click.addHandler(function(eventName, eventSource, eventArgs) {
+	var coords = eventArgs.location;	// coords are an mxn.LatLonPoint object
+});
+{% endhighlight %}
+
+	<h3>The End Pan Event</h3>
+	<p>The <code>endPan</code> event is fired when the map has finished moving, either as a result of a user dragging the map or the map's centre or bounds being changed. The event handler's <code>eventArgs</code> argument is empty for this event.</p>
+
+{% highlight javascript %}
+map.endPan.addHandler(function(eventName, eventSource, eventArgs) {
+	// map panning complete
+});
+{% endhighlight %}
+	
+	<h3>The Change Zoom Event</h3>
+	<p>The <code>changeZoom</code> event is fired when the map's zoom level is changed. The event handler's <code>eventArgs</code> argument is empty for this event.</p>
+	
+{% highlight javascript %}
+map.changeZoom.addHandler(function(eventName, eventSource, eventArgs) {
+	// map panning complete
+});
+{% endhighlight %}
+
+	<h3>The Marker Added Event</h3>
+	<p>The <code>markerAdded</code> event is fired when a <code>mxn.Marker</code> marker is added to the map. The event handler's <code>eventArgs</code> argument will contain an object with a <code>marker</code> property whose value is the <code>mxn.Marker</code> object which has been added.</p>
+	
+{% highlight javascript %}
+map.markerAdded.addHandler(function(eventName, eventSource, eventArgs) {
+	var marker = eventArgs.marker	// marker is an mxn.Marker object
+});
+{% endhighlight %}
+
+	<h3>The Marker Removed Event</h3>
+		<p>The <code>markerRemoved</code> event is fired when a <code>mxn.Marker</code> marker is removed from the map. The event handler's <code>eventArgs</code> argument will contain an object with a <code>marker</code> property whose value is the <code>mxn.Marker</code> object which has been removed.</p>
+
+{% highlight javascript %}
+map.markerRemoved.addHandler(function(eventName, eventSource, eventArgs) {
+	var marker = eventArgs.marker	// marker is an mxn.Marker object
+});
+{% endhighlight %}
+
+	<h3>The Polyline Added Event</h3>
+	<p>The <code>polylineAdded</code> event is fired when a <code>mxn.Polyline</code> polyline is added to the map. The event handler's <code>eventArgs</code> argument will contain an object with a <code>polyline</code> property whose value is the <code>mxn.Polyline</code> object which has been added.</p>
+
+{% highlight javascript %}
+map.polylineAdded.addHandler(function(eventName, eventSource, eventArgs) {
+	var marker = eventArgs.marker	// marker is an mxn.Polyline object
+});
+{% endhighlight %}
+	
+	<h3>The Polyline Removed Event</h3>
+		<p>The <code>polylineRemoved</code> event is fired when a <code>mxn.Polyline</code> polyline is removed from the map. The event handler's <code>eventArgs</code> argument will contain an object with a <code>polyline</code> property whose value is the <code>mxn.Polyline</code> object which has been removed.</p>
+
+{% highlight javascript %}
+map.polylineRemoved.addHandler(function(eventName, eventSource, eventArgs) {
+	var marker = eventArgs.marker	// marker is an mxn.Polyline object
+});
+{% endhighlight %}
+
 </div>

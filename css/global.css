@@ -31,7 +31,7 @@ links visited		#a64842
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
+a, abbr, acronym, address, big, cite,
 del, dfn, em, font, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 dl, dt, dd, ol, ul, li,
@@ -45,7 +45,9 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 }
 
-
+code {
+	font-family: monospace;
+}
 /* general typography and basics
 ####################################################################################
 */
@@ -84,11 +86,8 @@ h2 {
 }
 
 h3 {
-	font-size:0.9em;
 	padding-bottom: 10px;
-	padding-top:10px;
-
-	
+	color: #38569a;
 }
 
 a, a:visited {
@@ -218,6 +217,10 @@ p {
 	font-size: 2em;
 	margin-top: 5px;
 	margin-bottom: 5px;
+}
+
+.section h3 {
+	font-size: 1.5em;
 }
 
 .section {
