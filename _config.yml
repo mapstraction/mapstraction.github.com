@@ -1,4 +1,6 @@
 markdown: rdiscount
 pygments: true
 baseurl:    /
-permalink: pretty
+permalink: /blog/:year/:month/:day/:title
+safe: true
+lsi: false
