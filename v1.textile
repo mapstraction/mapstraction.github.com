@@ -7,7 +7,7 @@ title: v1
 <div id="v1content">
   <h2>Previous Versions: v1</h2>  				
   <ul>
-    <li><a href="/doc/" title="Generated Javascript Documentation">API Documentation</a></li>
+    <li><a href="http://mapstraction.com/mxn/build/latest/docs/symbols/mxn.Mapstraction.html" title="Generated Javascript Documentation">API Documentation</a></li>
     <li><a href="http://www.mapstraction.com/ljn.php" title="Mapstraction, Single Page with Several Maps">Page with several maps</a></li>
     <li><a href="http://www.mapstraction.com/demo-georss.php" title="GeoRSS &amp; KML Overlays in Mapstraction">GeoRSS &amp; KML</a></li>
     <li><a href="http://www.mapstraction.com/demo-overlay.php" title="">Image Overlay</a></li>
