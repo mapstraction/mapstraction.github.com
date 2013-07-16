@@ -35,7 +35,7 @@ dojo.addOnLoad(function() {
 	</div>
 
 	<div class="section">
-		<h2>Choose Your Map Provider</h2>
+		<h2>Choose And Load Your Map Provider And Mapstraction</h2>
 		<p>Before you can create a map with Mapstraction, you'll need to choose which map provider you want to use. You'll need to know 3 things ...</p>
 
 		<ol class="numbered">
@@ -54,11 +54,14 @@ dojo.addOnLoad(function() {
 		<p>If you wanted to use Leaflet, you'd need both the following CSS and JavaScript to be in your page's header ...</p>
 
 {% highlight html %}
-<link href="http://leaflet.cloudmade.com/dist/leaflet.css" media="all" rel="stylesheet" type="text/css" />
-<script src="http://leaflet.cloudmade.com/dist/leaflet.js" type="text/javascript"></script>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.css" />
+ <!--[if lte IE 8]>
+     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" />
+ <![endif]-->
+<script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
 {% endhighlight %}
 
-		<p>Finally, if you wanted to use Nokia's Here maps, you'd need a Here Developer account which will give you an application id and authentication token, so you'd need the following in your page's header ...</p>
+		<p>Or, if you wanted to use Nokia's HERE maps, you'd need a HERE Developer account which will give you an application id and authentication token, so you'd need the following in your page's header ...</p>
 
 {% highlight html %}
 <meta http-equiv="X-UA-Compatible" content="IE=7; IE=EmulateIE9" />
@@ -69,8 +72,26 @@ nokia.Settings.set ("authenticationToken", "[your-auth-token-here]");
 </script>
 {% endhighlight %}
 
+		<p>Finally, with our map provider's API loaded and knowing the Mapstraction provider id, you can load Mapstraction itself and tell it which provider to use. So, for OpenLayers you'd add the following to your page's header ...</p>
+		
+{% highlight html %}
+<script src="http://mapstraction.com/mxn/build/latest/mxn.js?(openlayers)" type="text/javascript"></script>
+{% endhighlight %}
+
+		<p>... using <code>leaflet</code> or <code>nokia</code> or whatever provider you've chosen to use.</p>
+		
 		<p>Now, armed with this information, you can create a basic web page containing the map of your choice.</p>
 	</div>
+	
+	<div class="section">
+		<h2>Using The Right Mapstraction Version</h2>
+		<p>To use the latest stable release of Mapstraction, always either host your own copy of Mapstraction or pull the code from <code>http://mapstraction.com/mxn/build/latest/mxn.js</code>. If you want to live life on the bleeding edge, the current development version of Mapstraction is found at <code>http://mapstraction.com/mxn/build/dev/mxn.js</code></p>
+		
+		<p>Do not, under any circumstances try to pull Mapstraction directly from the project's GitHub repository, via <code>https://raw.github.com/mapstraction/...</code>. GitHub have recently made some changes to the way in which they serve up content from <code>raw.github.com</code> and things may and probably will break.</p>
+		
+		<p>And now on to making a map ...</p>
+	</div>
+	
 	<div class="section">
 		<h2>A Basic Map Using OpenLayers</h2>
 		<p>Taking all the information from the previous section, you can now put together your web page. Firstly, you'll need to include the provider Javascript files into your page's header.</p>
@@ -82,7 +103,7 @@ nokia.Settings.set ("authenticationToken", "[your-auth-token-here]");
 		<p>Then include the Mapstraction Javascript file, telling Mapstraction which provider you'll be using.</p>
 
 {% highlight html %}
-<script src="https://raw.github.com/mapstraction/mxn/master/source/mxn.js?(openlayers)" type="text/javascript"></script>
+<script src="http://mapstraction.com/mxn/build/latest/mxn.js?(openlayers)" type="text/javascript"></script>
 {% endhighlight %}
 		
 		<p>You'll need to supply an HTML <code>div</code> element which will contain your map.</p>
@@ -120,7 +141,7 @@ nokia.Settings.set ("authenticationToken", "[your-auth-token-here]");
 <head>
    	<title>Mapstraction Simple Example</title>
    	<script src="http://openlayers.org/api/OpenLayers.js"></script>
-   	<script src="https://raw.github.com/mapstraction/mxn/master/source/mxn.js?(openlayers)" type="text/javascript"></script>
+   	<script src="http://mapstraction.com/mxn/build/latest/mxn.js?(openlayers)" type="text/javascript"></script>
 	<style type="text/css">
 	#map {
 		height: 400px;
@@ -154,8 +175,11 @@ var latlon = new mxn.LatLonPoint(51.50733, -0.12769);
 		<p>One of the key things about Mapstraction is that you can change your mapping provider without having to rewrite the vast majority of your code. So to change the example above from using OpenLayers to using Leaflet, is as simple as replacing the OpenLayers Javascript include with those needed by Leaflet.</p>
 
 {% highlight html %}
-<link href="http://leaflet.cloudmade.com/dist/leaflet.css" media="all" rel="stylesheet" type="text/css" />
-<script src="http://leaflet.cloudmade.com/dist/leaflet.js" type="text/javascript"></script>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.css" />
+<!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" />
+<![endif]-->
+<script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
 {% endhighlight %}						
 
 		<p>And telling Mapstraction to use Leaflet rather than OpenLayers</p>

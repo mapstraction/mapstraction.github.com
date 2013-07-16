@@ -9,9 +9,13 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
-	<link href="http://leaflet.cloudmade.com/dist/leaflet.css" media="all" rel="stylesheet" type="text/css" />
-	<script src="http://leaflet.cloudmade.com/dist/leaflet.js" type="text/javascript"></script>  <script src="http://openlayers.org/api/OpenLayers.js"></script>
-	<script src="https://raw.github.com/mapstraction/mxn/master/source/mxn.js?(openlayers,leaflet)" type="text/javascript"></script>
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.css" />
+	<!--[if lte IE 8]>
+	    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" />
+	<![endif]-->
+	<script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
+	<script src="http://openlayers.org/api/OpenLayers.js"></script>
+	<script src="http://mapstraction.com/mxn/build/latest/mxn.js?(openlayers,leaflet)" type="text/javascript"></script>
 	<title>Mapstraction - {{ page.title }}</title>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
 	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.3/jquery.backstretch.min.js"></script>
